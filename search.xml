@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>配置Java环境</title>
+      <link href="/posts/551d2bcc.html"/>
+      <url>/posts/551d2bcc.html</url>
+      
+        <content type="html"><![CDATA[<p>首先要区分jdk和jre：<br>JRE (Java Runtime Environment)：是 运行 Java 程序的环境。<br>JDK (Java Development Kit)：是 开发 Java 程序的工具包，它包含了 JRE。</p><p>截止到博客写作时间：Java最新版本为25</p><p>下载地址：<a href="https://www.oracle.com/cn/java/technologies/downloads/">https://www.oracle.com/cn/java/technologies/downloads/</a><br>作者的环境路径： D:\Java\jdk-21</p><p>配置系统环境变量：</p><ol><li>创建一个名为JAVA_HOME的变量，值为jdk的安装路径，作者就是D:\Java\jdk-21</li><li>在“系统变量”中，找到名为 Path 的变量，选中它，点击 编辑（Edit）,点击“新建”，然后添加： %JAVA_HOME%\bin</li></ol><p>验证：java -version 和 javac -version</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>待做</title>
+      <link href="/posts/1f501af5.html"/>
+      <url>/posts/1f501af5.html</url>
+      
+        <content type="html"><![CDATA[<ol><li>给博客换个鼠标指针的样式</li><li>集成Algolia搜索系统</li><li>学习魔改教程</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对自己说的话</title>
+      <link href="/posts/9daba997.html"/>
+      <url>/posts/9daba997.html</url>
+      
+        <content type="html"><![CDATA[<p>今天读了很多博客文章，感慨颇多，先是看到16岁的博客作者美化的页面-特别好看，感叹他如此年轻就有这般网站开发功底，未来前途无量，后来又看到<br>多位博客作者的自我介绍，关乎友情、技术、日常生活等，发现他们是如此的优秀。这些人和事告诉我追求自己喜欢的事物，要做到坚持不懈，相信自已<br>一定可以，总之，诸君共勉。</p><p>突然感觉到：学习就像搭积木一样，一点一点的积累知识，重要的是不断的复习和对知识的应用。</p><p>明确一个目标后，一定要尝试着实现，不要被自己的想法所限制。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 感悟 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客配置记录</title>
+      <link href="/posts/77f46582.html"/>
+      <url>/posts/77f46582.html</url>
+      
+        <content type="html"><![CDATA[<p>添加分类：<br>执行命令: hexo new page categories</p><p>坑：在添加分类后，访问<a href="http://localhost:4000/categories/%EF%BC%8C%E9%A1%B5%E9%9D%A2%E4%BC%9A%E6%98%BE%E7%A4%BA%E7%A9%BA%E7%99%BD%EF%BC%8C">http://localhost:4000/categories/，页面会显示空白，</a><br>    但是访问<a href="http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2/%EF%BC%8C%E5%B0%B1%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%87%BA%E5%8D%9A%E5%AE%A2%E5%88%86%E7%B1%BB%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0">http://localhost:4000/categories/博客/，就会显示出博客分类下的文章</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自动记账的使用</title>
+      <link href="/posts/5a00aa83.html"/>
+      <url>/posts/5a00aa83.html</url>
+      
+        <content type="html"><![CDATA[<p>记账软件：钱迹–官网地址：<a href="https://www.qianji.app/">https://www.qianji.app/</a><br>                官方文档地址：<a href="https://docs.qianjiapp.com/">https://docs.qianjiapp.com/</a><br>记账模块：自动记账–官网地址：<a href="https://ez-book.org/">https://ez-book.org/</a><br>                官方文档地址：<a href="https://ez-book.org/pages/start/">https://ez-book.org/pages/start/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vscode使用技巧</title>
+      <link href="/posts/ac164e6c.html"/>
+      <url>/posts/ac164e6c.html</url>
+      
+        <content type="html"><![CDATA[<p>预览markdown：Ctrl + Shift + V可预览效果</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>scrcpy使用教程</title>
+      <link href="/posts/3003b21e.html"/>
+      <url>/posts/3003b21e.html</url>
+      
+        <content type="html"><![CDATA[<p>本地需有java环境</p><p>下载最新版即可，地址：<a href="https://github.com/Genymobile/scrcpy/releases/">https://github.com/Genymobile/scrcpy/releases/</a><br>下载后解压缩，在当前路径下打开cmd窗口，或者设置环境变量</p><p>有线连接：<br>    USB数据线<br>    Android设备上启用开发者选项<br>    开启USB调试模式</p><p>无线连接：<br>    使用adb connect ip:port尝试连接<br>    连接成功会提示：connected to ip:port</p><p>快捷键：</p><p>特殊命令：scrcpy -b2M -m800 -S -K<br>参数解释：-b2M   带宽限制为2M<br>         -m800  分辨率为800*480<br>         -S     启动时关闭设备屏幕<br>         -K     启用 HID 模拟，允许键盘映射</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>和GitHub建立ssh连接</title>
+      <link href="/posts/362ed813.html"/>
+      <url>/posts/362ed813.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="和GitHub建立ssh连接"><a href="#和GitHub建立ssh连接" class="headerlink" title="和GitHub建立ssh连接"></a>和GitHub建立ssh连接</h1><h2 id="创建SSH密钥和公钥"><a href="#创建SSH密钥和公钥" class="headerlink" title="创建SSH密钥和公钥"></a>创建SSH密钥和公钥</h2><p>首先在本地创建ssh密钥和公钥。</p><p>打开终端，输入以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span> -f /path/to/your/key</span><br></pre></td></tr></table></figure><p>参数说明：</p><ul><li><p><code>-t</code> 表示用于指定生成密钥的类型（type）<br>其中ed25519是密钥的类型，可以选其他类型，如rsa。但是建议使用ed25519，因为ed25519密钥生成的速度更快，并且生成的密钥更小。</p></li><li><p><code>-C</code> 表示添加一个 注释（comment）<br>“<a href="mailto:&#121;&#x6f;&#117;&#114;&#x5f;&#x65;&#x6d;&#x61;&#x69;&#x6c;&#64;&#x65;&#120;&#97;&#109;&#112;&#x6c;&#101;&#46;&#99;&#x6f;&#109;">your_email@example.com</a>“是密钥的注释，可以填写自己的邮箱。<br>这个注释会出现在公钥文件的末尾，最终生成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGazvX... zhangsan@company.com</span><br></pre></td></tr></table></figure></li><li><p><code>-f</code>：指定文件路径（file）<br>提供的路径将作为私钥文件的路径，公钥会自动在私钥名后加上 <code>.pub</code> 扩展名。</p></li></ul><h2 id="配置SSH客户端"><a href="#配置SSH客户端" class="headerlink" title="配置SSH客户端"></a>配置SSH客户端</h2><p>修改 <code>~/.ssh/config</code> 文件（如果文件不存在则创建）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName ssh.github.com</span><br><span class="line">    User git</span><br><span class="line">    Port 443</span><br><span class="line">    IdentityFile ~/.ssh/github_key</span><br><span class="line">    IdentitiesOnly yes</span><br><span class="line">    </span><br><span class="line">Host gitee.com</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/gitee_key</span><br><span class="line">    IdentitiesOnly yes</span><br></pre></td></tr></table></figure><p>配置项说明：</p><ul><li><code>Host</code>：定义主机别名</li><li><code>HostName</code>：实际连接的主机名</li><li><code>User</code>：连接时使用的用户名</li><li><code>Port</code>：连接端口（GitHub推荐使用443端口）</li><li><code>IdentityFile</code>：指定用于身份验证的私钥文件路径</li><li><code>IdentitiesOnly</code>：只使用指定的身份文件进行认证</li></ul><h2 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h2><p>测试与GitHub的连接：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>如果连接成功，会显示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi 你的用户名! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客搭建</title>
+      <link href="/posts/ee940876.html"/>
+      <url>/posts/ee940876.html</url>
+      
+        <content type="html"><![CDATA[<p>博客环境：hexo+butterfly，托管在github pages上</p><p>本地环境： nvm管理下的node和npm(当然可以不用nvm，这个不是必须，只要有node环境即可)</p><p>第一步： 申请GitHub pages</p><p>先创建一个仓库，仓库名称必须为 用户名.github.io<br>选择可见性一定为公共，其他保持默认即可。<br>这里可以放一张图片<br>第二步： 在本地创建hexo项目</p><p>执行命令：</p><p>特殊命令1： hexo clean &amp;&amp; hexo g &amp;&amp; hexo s<br>特殊命令2： hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p><p>优雅魔改：<br>    1.将自定义文件放在 博客根目录的 source&#x2F; 文件夹下<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 建议目录结构</span></span><br><span class="line">your-hexo-site/</span><br><span class="line">├── <span class="built_in">source</span>/</span><br><span class="line">│   ├── js/</span><br><span class="line">│   │   └── custom.js</span><br><span class="line">│   ├── css/</span><br><span class="line">│   │   └── custom.css</span><br><span class="line">│   └── img/  <span class="comment"># 自定义图片</span></span><br><span class="line">└── ...</span><br></pre></td></tr></table></figure></p><p>升级主题：<br>    1.进入主题目录<br>        cd themes&#x2F;butterfly<br>    2.确认远程仓库（upstream）是否已添加<br>        git remote -v –查看当前 Git 仓库配置的远程仓库的详细信息。<br>        应输出：<br>        origin    <a href="https://github.com/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/hexo-theme-butterfly.git">https://github.com/你的用户名/hexo-theme-butterfly.git</a> (fetch)<br>        origin    <a href="https://github.com/%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D/hexo-theme-butterfly.git">https://github.com/你的用户名/hexo-theme-butterfly.git</a> (push)<br>        upstream  <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> (fetch)<br>        upstream  <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> (push)<br>        其中：origin是 fork 仓库， upstream是 原作者 仓库<br>    3.从上游仓库拉取最新更新<br>        git fetch upstream<br>    4.切换到主题的主分支（通常是 master 或 main）<br>        git checkout master<br>    5.将上游仓库的更新合并到本地分支<br>        git merge upstream&#x2F;master<br>    6.推送到你的 fork 仓库<br>        git push origin master<br>    7.返回博客根目录<br>        cd ..&#x2F;..<br>    8.重新生成并部署博客<br>        hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p><p>vercel 部署后的域名：zhuo-nian-blog.vercel.app – vercel给的，因为被墙，访问不了<br>                  ：blog.305533.xyz – 添加的自定义域名，该域名服务商为spaceship，并且托管于cloudflare</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
