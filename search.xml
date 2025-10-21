@@ -4,6 +4,84 @@
   
     
     <entry>
+      <title>npm小技巧</title>
+      <link href="/posts/2289d6ba.html"/>
+      <url>/posts/2289d6ba.html</url>
+      
+        <content type="html"><![CDATA[<p>查询npm使用的源仓库的地址：<br>命令行执行：npm config get registry<br>返回： <a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a> （该地址由阿里巴巴维护）</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>日记</title>
+      <link href="/posts/3458e8f8.html"/>
+      <url>/posts/3458e8f8.html</url>
+      
+        <content type="html"><![CDATA[<p>今天是2025年10月21日，坐标山东青岛，天气多云，最高14℃，最低8℃。<br>特地穿了秋衣和一件厚点的外套，往室外一站还是感觉很冷，冷到打颤。<br>中午吃了两块月饼，椒盐味和桂花味，都挺好吃的。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>js中的坑</title>
+      <link href="/posts/9e359eb9.html"/>
+      <url>/posts/9e359eb9.html</url>
+      
+        <content type="html"><![CDATA[<p>js中的余数和数学中的余数不同</p><p>数学中的 ‘余数’ 和 ‘模’ 是同一个概念</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>将博客部署到服务器上</title>
+      <link href="/posts/13917844.html"/>
+      <url>/posts/13917844.html</url>
+      
+        <content type="html"><![CDATA[<p>将博客生成的public文件夹下的文件上传到服务器的指定目录下<br>服务器安装Nginx：</p><h1 id="更新包列表"><a href="#更新包列表" class="headerlink" title="更新包列表"></a>更新包列表</h1><p>sudo apt update</p><h1 id="安装-Nginx"><a href="#安装-Nginx" class="headerlink" title="安装 Nginx"></a>安装 Nginx</h1><p>sudo apt install nginx -y</p><h1 id="检查-Nginx-是否运行"><a href="#检查-Nginx-是否运行" class="headerlink" title="检查 Nginx 是否运行"></a>检查 Nginx 是否运行</h1><p>sudo systemctl status nginx</p><p>server {<br>    listen 80;<br>    server_name 121.37.173.71;</p><pre><code>root /home/zhuonian/blog;index index.html;location / {    try_files $uri $uri/ =404;}location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg)$ {    expires 1y;    add_header Cache-Control &quot;public, immutable&quot;;}</code></pre><p>}</p><ol start="3"><li><p>启用站点（创建符号链接）<br>bash<br>编辑<br>sudo ln -s &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;blog &#x2F;etc&#x2F;nginx&#x2F;sites-enabled&#x2F;</p></li><li><p>删除默认站点（避免冲突）<br>bash<br>编辑<br>sudo rm &#x2F;etc&#x2F;nginx&#x2F;sites-enabled&#x2F;default</p></li><li><p>测试配置是否正确<br>bash<br>编辑<br>sudo nginx -t</p></li><li><p>重启 Nginx<br>bash<br>编辑<br>sudo systemctl restart nginx</p></li></ol><p>打开浏览器，访问公网地址即可</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>备忘录</title>
+      <link href="/posts/27d394ca.html"/>
+      <url>/posts/27d394ca.html</url>
+      
+        <content type="html"><![CDATA[<p>华为云服务到期事件：2026&#x2F;03&#x2F;07 23:59:59</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>十万个为什么？</title>
+      <link href="/posts/5e301e09.html"/>
+      <url>/posts/5e301e09.html</url>
+      
+        <content type="html"><![CDATA[<p>问：什么叫伪代码？<br>答：伪代码是一种用近似编程语言的自然语言来描述算法逻辑的简化代码，它不追求语法正确，而是为了清晰地表达程序的步骤和思路。(用普通话解释代码)<br>问：LHS、RHS？<br>答：lhs是左值，rhs是右值。lhs查找的是变量的位置，rhs查找的是变量的值。<br>问：JavaScript的三兄弟？<br>答：1.引擎 2.编译器 3.作用域<br>问：两种作用域工作模型？<br>答: 1. 词法作用域 2. 动态作用域  词法作用域在代码编写时（编译阶段）就确定了，而动态作用域在代码运行时才确定。<br>问：转义和不转义的区别？</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git工具的使用</title>
       <link href="/posts/636d6803.html"/>
       <url>/posts/636d6803.html</url>
@@ -85,7 +163,7 @@
       <link href="/posts/1f501af5.html"/>
       <url>/posts/1f501af5.html</url>
       
-        <content type="html"><![CDATA[<p>先有需求，再有功能，先做优先级最高的事</p><ol><li>给博客换个鼠标指针的样式</li><li>集成Algolia搜索系统</li><li>学习魔改教程</li><li>修改顶部导航栏的位置，改为居中</li></ol>]]></content>
+        <content type="html"><![CDATA[<p>先有需求，再有功能，先做优先级最高的事</p><ol><li>给博客主页的文章换个样式</li></ol>]]></content>
       
       
       
@@ -117,7 +195,7 @@
       <link href="/posts/77f46582.html"/>
       <url>/posts/77f46582.html</url>
       
-        <content type="html"><![CDATA[<p>添加分类：<br>执行命令: hexo new page categories</p><p>魔改：<br>    明确主题通过 Pug + Stylus 来构建页面 – 需要学习<br>    引入自定义文件：<br>        1. 项目根目录下创建source&#x2F;css&#x2F;xxx.css文件和source&#x2F;js&#x2F;xxx.js文件<br>        2. 在_config.butterfly.yml中：(当然可以引入多个文件)<br>            inject:<br>            head:<br>                - <link rel="stylesheet" href="/css/xxx.css"><br>            bottom:<br>                - <script type="text/javascript" src="/js/xxx.js"></script></p><p>坑：在添加分类后，访问<a href="http://localhost:4000/categories/%EF%BC%8C%E9%A1%B5%E9%9D%A2%E4%BC%9A%E6%98%BE%E7%A4%BA%E7%A9%BA%E7%99%BD%EF%BC%8C">http://localhost:4000/categories/，页面会显示空白，</a><br>    但是访问<a href="http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2/%EF%BC%8C%E5%B0%B1%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%87%BA%E5%8D%9A%E5%AE%A2%E5%88%86%E7%B1%BB%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0">http://localhost:4000/categories/博客/，就会显示出博客分类下的文章</a></p>]]></content>
+        <content type="html"><![CDATA[<p>添加分类：<br>执行命令: hexo new page categories</p><p>魔改：<br>    明确主题通过 Pug + Stylus 来构建页面 – 需要学习<br>    引入自定义文件：<br>        1. 项目根目录下创建source&#x2F;css&#x2F;xxx.css文件和source&#x2F;js&#x2F;xxx.js文件<br>        2. 在_config.butterfly.yml中：(当然可以引入多个文件)<br>            inject:<br>            head:<br>                - <link rel="stylesheet" href="/css/xxx.css"><br>            bottom:<br>                - <script type="text/javascript" src="/js/xxx.js"></script><br>    对主题的修改不得不修改源代码</p><p>坑：在添加分类后，访问<a href="http://localhost:4000/categories/%EF%BC%8C%E9%A1%B5%E9%9D%A2%E4%BC%9A%E6%98%BE%E7%A4%BA%E7%A9%BA%E7%99%BD%EF%BC%8C">http://localhost:4000/categories/，页面会显示空白，</a><br>    但是访问<a href="http://localhost:4000/categories/%E5%8D%9A%E5%AE%A2/%EF%BC%8C%E5%B0%B1%E4%BC%9A%E6%98%BE%E7%A4%BA%E5%87%BA%E5%8D%9A%E5%AE%A2%E5%88%86%E7%B1%BB%E4%B8%8B%E7%9A%84%E6%96%87%E7%AB%A0">http://localhost:4000/categories/博客/，就会显示出博客分类下的文章</a></p>]]></content>
       
       
       <categories>
@@ -193,7 +271,7 @@
       <link href="/posts/362ed813.html"/>
       <url>/posts/362ed813.html</url>
       
-        <content type="html"><![CDATA[<h1 id="和GitHub建立ssh连接"><a href="#和GitHub建立ssh连接" class="headerlink" title="和GitHub建立ssh连接"></a>和GitHub建立ssh连接</h1><h2 id="创建SSH密钥和公钥"><a href="#创建SSH密钥和公钥" class="headerlink" title="创建SSH密钥和公钥"></a>创建SSH密钥和公钥</h2><p>首先在本地创建ssh密钥和公钥。</p><p>打开终端，输入以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span> -f /path/to/your/key</span><br></pre></td></tr></table></figure><p>参数说明：</p><ul><li><p><code>-t</code> 表示用于指定生成密钥的类型（type）<br>其中ed25519是密钥的类型，可以选其他类型，如rsa。但是建议使用ed25519，因为ed25519密钥生成的速度更快，并且生成的密钥更小。</p></li><li><p><code>-C</code> 表示添加一个 注释（comment）<br>“<a href="mailto:&#121;&#x6f;&#x75;&#x72;&#95;&#101;&#x6d;&#x61;&#105;&#x6c;&#64;&#x65;&#x78;&#x61;&#x6d;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;">your_email@example.com</a>“是密钥的注释，可以填写自己的邮箱。<br>这个注释会出现在公钥文件的末尾，最终生成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGazvX... zhangsan@company.com</span><br></pre></td></tr></table></figure></li><li><p><code>-f</code>：指定文件路径（file）<br>提供的路径将作为私钥文件的路径，公钥会自动在私钥名后加上 <code>.pub</code> 扩展名。</p></li></ul><h2 id="配置SSH客户端"><a href="#配置SSH客户端" class="headerlink" title="配置SSH客户端"></a>配置SSH客户端</h2><p>修改 <code>~/.ssh/config</code> 文件（如果文件不存在则创建）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName ssh.github.com</span><br><span class="line">    User git</span><br><span class="line">    Port 443</span><br><span class="line">    IdentityFile ~/.ssh/github_key</span><br><span class="line">    IdentitiesOnly yes</span><br><span class="line">    </span><br><span class="line">Host gitee.com</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/gitee_key</span><br><span class="line">    IdentitiesOnly yes</span><br></pre></td></tr></table></figure><p>配置项说明：</p><ul><li><code>Host</code>：定义主机别名</li><li><code>HostName</code>：实际连接的主机名</li><li><code>User</code>：连接时使用的用户名</li><li><code>Port</code>：连接端口（GitHub推荐使用443端口）</li><li><code>IdentityFile</code>：指定用于身份验证的私钥文件路径</li><li><code>IdentitiesOnly</code>：只使用指定的身份文件进行认证</li></ul><h2 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h2><p>测试与GitHub的连接：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>如果连接成功，会显示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi 你的用户名! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="和GitHub建立ssh连接"><a href="#和GitHub建立ssh连接" class="headerlink" title="和GitHub建立ssh连接"></a>和GitHub建立ssh连接</h1><h2 id="创建SSH密钥和公钥"><a href="#创建SSH密钥和公钥" class="headerlink" title="创建SSH密钥和公钥"></a>创建SSH密钥和公钥</h2><p>首先在本地创建ssh密钥和公钥。</p><p>打开终端，输入以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span> -f /path/to/your/key</span><br></pre></td></tr></table></figure><p>参数说明：</p><ul><li><p><code>-t</code> 表示用于指定生成密钥的类型（type）<br>其中ed25519是密钥的类型，可以选其他类型，如rsa。但是建议使用ed25519，因为ed25519密钥生成的速度更快，并且生成的密钥更小。</p></li><li><p><code>-C</code> 表示添加一个 注释（comment）<br>“<a href="mailto:&#x79;&#111;&#x75;&#x72;&#x5f;&#101;&#x6d;&#97;&#105;&#108;&#x40;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#46;&#x63;&#x6f;&#109;">your_email@example.com</a>“是密钥的注释，可以填写自己的邮箱。<br>这个注释会出现在公钥文件的末尾，最终生成：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGazvX... zhangsan@company.com</span><br></pre></td></tr></table></figure></li><li><p><code>-f</code>：指定文件路径（file）<br>提供的路径将作为私钥文件的路径，公钥会自动在私钥名后加上 <code>.pub</code> 扩展名。</p></li></ul><h2 id="配置SSH客户端"><a href="#配置SSH客户端" class="headerlink" title="配置SSH客户端"></a>配置SSH客户端</h2><p>修改 <code>~/.ssh/config</code> 文件（如果文件不存在则创建）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName ssh.github.com</span><br><span class="line">    User git</span><br><span class="line">    Port 443</span><br><span class="line">    IdentityFile ~/.ssh/github_key</span><br><span class="line">    IdentitiesOnly yes</span><br><span class="line">    </span><br><span class="line">Host gitee.com</span><br><span class="line">    HostName gitee.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/gitee_key</span><br><span class="line">    IdentitiesOnly yes</span><br></pre></td></tr></table></figure><p>配置项说明：</p><ul><li><code>Host</code>：定义主机别名</li><li><code>HostName</code>：实际连接的主机名</li><li><code>User</code>：连接时使用的用户名</li><li><code>Port</code>：连接端口（GitHub推荐使用443端口）</li><li><code>IdentityFile</code>：指定用于身份验证的私钥文件路径</li><li><code>IdentitiesOnly</code>：只使用指定的身份文件进行认证</li></ul><h2 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h2><p>测试与GitHub的连接：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>如果连接成功，会显示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi 你的用户名! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
